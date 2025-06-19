@@ -68,6 +68,53 @@ As a manager, I want to understand my colleagues' progress, so that I can report
 |---------------------|-------------------|-------------------|
 | US-1                | 4                 | 4                 |
 
+## 🧩 Detaljan opis rada funkcije `main()`
+
+**Evo pregleda što razvijena funkcija zapravo radi:**
+
+### Glavna funkcija `main()`:
+Ova funkcija predstavlja centralno mjesto izvršavanja koda. Njena uloga je da:
+- Učita korisničke priče iz fajla.
+- Ekstrahuje ključne komponente iz priča (ulogu, akciju, cilj).
+- Generiše test slučajeve na osnovu tih komponenti.
+- Sačuva generisane rezultate u izlazni fajl.
+
+### Varijable `file_path` i `output_file`:
+- `file_path`: Putanja do tekstualnog fajla koji sadrži korisničke priče (npr. "User_Story.txt").
+- `output_file`: Naziv fajla u koji će biti sačuvani rezultati (npr. "Test_Case_Results.txt").
+
+### Funkcija `load_user_stories(file_path)`:
+Ova funkcija čita korisničke priče iz fajla i vraća ih kao listu rečenica.
+
+### Varijable `report_data` i `test_case_data`:
+- `report_data`: Lista podataka za izvještaj po priči (ID, broj pozitivnih/negativnih testova).
+- `test_case_data`: Detalji test slučajeva (ID, tekst priče, sadržaj testova).
+
+### Petlja kroz korisničke priče:
+- Uz pomoć `enumerate()` svaka priča dobija identifikator (npr. "US-1").
+- Ispisuje se ID i sadržaj priče.
+
+### Korišćenje SpaCy modela:
+- `nlp(user_story)`: Parsira priču i priprema za ekstrakciju.
+
+### Ekstrakcija komponenti:
+- `extract_components(doc)`: Izdvaja `ulogu`, `akciju`, `cilj` iz rečenice.
+
+### Generisanje testova:
+- `generate_test_cases(role, action, goal)`: Kreira pozitivne i negativne testove.
+
+### Pohrana podataka:
+- Podaci o testovima i izvještaju čuvaju se u odgovarajuće liste.
+
+### Funkcija `save_results_to_file(...)`:
+- Rezultati se upisuju u tekstualni fajl (Test_Case_Results.txt).
+
+### Izvršenje programa:
+- Funkcija `main()` se poziva samo ako je skripta direktno pokrenuta (`if __name__ == "__main__":`).
+
+**Zaključno:**
+Ovaj kod koristi SpaCy-eve NLP tehnike za obradu korisničkih priča, izdvajanje ključnih komponenti i automatsko generisanje funkcionalnih testova. Time značajno unapređuje brzinu i konzistentnost QA procesa u razvoju softvera.
+
 ## ✍️ Autor
 Ime i prezime autora: Marko Pribisalić
 Kontakt: marko.pribisalic@gmail.com
