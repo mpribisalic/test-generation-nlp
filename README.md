@@ -29,7 +29,7 @@ pandas==2.2.2
 
 ## 📁 Struktura projekta
 ```
-user-story-test-generator/
+test-generation-nlp/
 ├── README.md                  # ovaj fajl
 ├── requirements.txt           # zavisnosti projekta
 ├── user_story_test_generator.py  # glavna skripta
