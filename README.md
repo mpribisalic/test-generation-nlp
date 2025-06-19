@@ -1,4 +1,4 @@
-# Generator test slučajeva iz korisničkih priča
+# Generisanje testnih slučajeva iz korisničkih priča
 
 Automatizovani sistem za generisanje pozitivnih i negativnih testnih slučajeva iz korisničkih priča korišćenjem tehnika obrade prirodnog jezika i SpaCy biblioteke.
 
@@ -36,9 +36,7 @@ user-story-test-generator/
 ├── data/
 │   └── sample_user_stories.txt   # ulazne korisničke priče
 ├── output/
-│   └── Test_Case_Results.txt     # generisani testovi i izvještaj
-└── docs/
-    └── diagram.png               # dijagrami ili slike (opcionalno)
+│   └── sample_results.txt     # generisani testovi i izvještaj
 ```
 
 ## ▶️ Pokretanje projekta
