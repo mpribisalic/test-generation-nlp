@@ -68,9 +68,6 @@ As a manager, I want to understand my colleagues' progress, so that I can report
 |---------------------|-------------------|-------------------|
 | US-1                | 4                 | 4                 |
 
-## ✍️ Autori
-Ime i prezime autora (dodati ovdje)  
-Kontakt: tvoj.email@example.com
-
----
-Ovaj alat je posebno koristan za timove u agilnom razvoju softvera, jer omogućava brzo i efikasno generisanje testova koji prate korisničke zahtjeve.
+## ✍️ Autor
+Ime i prezime autora: Marko Pribisalić
+Kontakt: marko.pribisalic@gmail.com
